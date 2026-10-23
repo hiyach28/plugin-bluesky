@@ -96,7 +96,6 @@ public class BlueskyExecutionTest extends AbstractBlueskyTest {
     @SuppressWarnings("deprecation")
     @Test
     void flowSettingDeprecatedOptionsStillValidatesAndRuns() throws Exception {
-        // Flows written before the deprecation still set these options: they must keep parsing, validating and running.
         var flow = YamlParser.parse(
             new File(
                 Objects.requireNonNull(
